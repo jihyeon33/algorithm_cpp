@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//Á¤´ä
 int cnt = 0;
 int X,Y;
 int directx[4] = {1,-1,0,0};

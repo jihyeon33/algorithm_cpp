@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//Á¤´ä¾Æ´Ô
 int rslt = 0;
 int cnt = 0;
 int X, Y;
