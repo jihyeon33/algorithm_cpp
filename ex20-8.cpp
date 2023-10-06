@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//Á¤´ä
 int n;
 void go(int next) {
 	if (next == 0) {

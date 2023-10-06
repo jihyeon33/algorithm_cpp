@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//Á¤´ä
 char str[5] = { 0 };
 void print(int idx) {
 	if (idx == 5) {

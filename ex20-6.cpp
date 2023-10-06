@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//Á¤´ä
 int a, b;
 void go(int idx) {
 	if (idx == b) {
