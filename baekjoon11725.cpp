@@ -1,7 +1,7 @@
 #include <iostream>
 #include<vector>
 using namespace std;
-//백준 11725 트리의 부모 찾기  디버깅하기
+//백준 11725 트리의 부모 찾기  //출력은 정상인데 런타임 에러 (AccessNullPointer)
 vector<int> rslt;
 struct node {
 	int val;
@@ -12,11 +12,13 @@ node* isexist(node* nownode, int val) {
 	if (nownode->val == val) return nownode;
 	node* left = nownode->left;
 	if (left != NULL) {
-		isexist(left, val);
+		node* nd= isexist(left, val);
+		if(nd!=NULL) return nd;
 	}
 	node* right = nownode->right;
 	if (right != NULL) {
-		isexist(right, val);
+		node* nd = isexist(right, val);
+		if (nd != NULL) return nd;
 	}
 	return NULL;
 }
@@ -27,7 +29,7 @@ node* createnode(int value) {
 	newnode->right = NULL;
 	return newnode;
 }
-node* insertnode(node* parentnode, int value) {
+void insertnode(node* parentnode, int value) {
 	node* siblingnode = createnode(value);
 	if (parentnode->left == NULL) {
 		parentnode->left = siblingnode;
