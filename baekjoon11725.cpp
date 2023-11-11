@@ -1,7 +1,7 @@
 #include <iostream>
 #include<vector>
 using namespace std;
-//백준 11725 트리의 부모 찾기  //출력은 정상인데 런타임 에러 (AccessNullPointer)
+//백준 11725 트리의 부모 찾기  //출력은 정상인데 백준 체점에서 런타임 에러 (AccessNullPointer) 이진트리로 전제하고 풀어서 그런듯, 수정필요.
 vector<int> rslt;
 struct node {
 	int val;
